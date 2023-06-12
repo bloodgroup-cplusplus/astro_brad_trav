@@ -1,7 +1,15 @@
 {
+<<<<<<< HEAD
   "name": "Astro Project",
+=======
+  "name": "@chad/leb",
+>>>>>>> b8d7804 ( added bunch of changes)
   "type": "module",
   "version": "0.0.1",
+  "private": true,
+  "browserslist": [
+    "defaults"
+  ],
   "scripts": {
     "dev": "astro dev",
     "start": "astro dev",
@@ -10,6 +18,9 @@
     "astro": "astro"
   },
   "dependencies": {
-    "astro": "^2.5.6"
+    "astro": "^2.5.6",
+    "astro-icon": "^0.8.1",
+    "postcss": "^8.4.24",
+    "postcss-preset-env": "^7.8.3"
   }
 }
