@@ -1,6 +1,9 @@
 ---
-// component import 
+// library imports 
+import { Image } from "@astrojs/image/components";
 
+
+// component import 
 import MainLayout from "./MainLayout.astro";
 
 
@@ -17,7 +20,6 @@ const {frontmatter} = Astro.props;
 const{title,description,date,category,author,image} = frontmatter
 
 ---
-
 <MainLayout title={title} {description}>
     <header>
         <div class="container">
@@ -27,7 +29,7 @@ const{title,description,date,category,author,image} = frontmatter
             <h1 class="h1">{title}</h1>
             <p> <a href={`/author/${slugify(author)}/`}>{author}</a>  {formatDate(date)}  </p>
         </div>
-        <img src={gangtok} alt="Gangtok">
+        <Image src={image.src} alt={image.alt} width="1200" height="600" format="webp" fit="cover" quality={80} aspectRatio="5.2" class:list="hero-image"/>
         <div>
             <h2 class="h2">Itinerary</h2>
         </div>
