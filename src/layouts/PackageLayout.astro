@@ -1,17 +1,23 @@
 ---
-import Footer from "../components/Footer.astro"
-import Nav from "../components/Nav.astro"
+// component import 
 
-//style import 
+import MainLayout from "./MainLayout.astro";
+const {frontmatter} = Astro.props;
+console.log(frontmatter)
 
-import "../styles/global.css"
-
-
-
-const {
-    title="Angil Tours and Travels",
-    description="My musings about the Astro"
-
-}= Astro.props;
 ---
 
+<MainLayout title="Angil Tours and Travels">
+    <header>
+        <div class="container">
+
+        </div>
+        <img src="" alt="">
+    </header>
+    <div class="post-content">
+        <div class="content">
+            <slot/>
+        </div>
+    </div>
+
+</MainLayout>

@@ -1,5 +1,5 @@
 ---
-
+layout: "../../layouts/PackageLayout.astro"
 title: Gangtok SightSeeing
 date: 2022-11-20
 author: 2 Days 2 Nights
