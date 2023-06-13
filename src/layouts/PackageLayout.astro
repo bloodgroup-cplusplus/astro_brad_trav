@@ -5,7 +5,7 @@ import MainLayout from "./MainLayout.astro";
 
 
 // utils import 
-import {slugify} from "../js/utils.js"
+import {slugify,formatDate} from "../js/utils.js"
 
 // image import 
 import gangtok from "/images/post-1.webp"
@@ -25,7 +25,7 @@ const{title,description,date,category,author,image} = frontmatter
                 <a href={`/category/${category}`} class="badge">{category}</a>
             </small>
             <h1 class="h1">{title}</h1>
-            <p> <a href={`/author/${slugify(author)}`}>{author}</a></p>
+            <p> <a href={`/author/${slugify(author)}/`}>{author}</a>  {formatDate(date)}  </p>
         </div>
         <img src={gangtok} alt="Gangtok">
         <div>

@@ -9,3 +9,10 @@ export function slugify(text)
     .replace(/^-+/,'')
     .replace(/-+$/,'');
 }
+
+export function formatDate(date)
+{
+    return new Date(date).toLocaleDateString('en-IN',{
+        timeZone:"UTC",
+    })
+}
