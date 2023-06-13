@@ -2,6 +2,17 @@
 // component import 
 
 import MainLayout from "./MainLayout.astro";
+
+
+// utils import 
+import {slugify} from "../js/utils.js"
+
+// image import 
+import gangtok from "/images/post-1.webp"
+
+// import links 
+import Link from "../components/Link.astro";
+
 const {frontmatter} = Astro.props;
 const{title,description,date,category,author,image} = frontmatter
 
@@ -13,14 +24,38 @@ const{title,description,date,category,author,image} = frontmatter
             <small>
                 <a href={`/category/${category}`} class="badge">{category}</a>
             </small>
-
+            <h1 class="h1">{title}</h1>
+            <p> <a href={`/author/${slugify(author)}`}>{author}</a></p>
         </div>
-        <img src="" alt="">
+        <img src={gangtok} alt="Gangtok">
+        <div>
+            <h2 class="h2">Itinerary</h2>
+        </div>
     </header>
     <div class="post-content">
         <div class="content">
             <slot/>
         </div>
     </div>
-
+    <div
+    class="container"
+    style={{
+      display: "grid",
+      placeItems: "center",
+      textAlign: "center",
+      gap: "var(--space-sm)",
+    }}
+  >
+    
+    <Link
+      href="/"
+      style="secondary"
+      text="Book Now"
+      icon={{
+        name: "tabler:phone",
+        side: "right",
+      }}
+    />
+  </div>
+    
 </MainLayout>
