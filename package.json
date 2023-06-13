@@ -1,9 +1,5 @@
 {
-<<<<<<< HEAD
-  "name": "Astro Project",
-=======
   "name": "@chad/leb",
->>>>>>> b8d7804 ( added bunch of changes)
   "type": "module",
   "version": "0.0.1",
   "private": true,
