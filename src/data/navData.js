@@ -5,6 +5,11 @@ const navData=[{
 {
     name:"Packages",
     path:"/packages"
+},
+
+{
+    name:"Contact",
+    path:"/contact"
 }
 
 ]
