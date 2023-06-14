@@ -7,9 +7,10 @@ image: {
   src: "/images/post-1.webp",
   alt: "Gangtok",
 }
-description: Have you ever wondered what the most important items of life are? Well, wonder no more!
+
+description: "Gangtok is the capital of the mountainous northern Indian state of Sikkim. Established as a Buddhist pilgrimage site in the 1840s, the city became capital of an independent monarchy after British rule ended, but joined India in 1975. Today, it remains a Tibetan Buddhist center and a base for hikers organizing permits and transport for treks through Sikkim’s Himalayan mountain ranges "
 draft: false
-category: Reference Docs
+category: Gangtok Sikkim
 ---
 
 Nisi duis ex aliqua eu officia eiusmod duis magna pariatur. Irure laborum qui aliqua nulla esse cillum laborum aliquip nulla elit. Id id Lorem duis irure cillum culpa. Nulla sint et aliqua velit do. Nulla sit sit proident consectetur enim ullamco aliqua in reprehenderit ullamco officia.
